@@ -8,7 +8,7 @@
 [node name="Floor" parent="." instance=ExtResource("1_bfemw")]
 position = Vector2(534, 627)
 rotation = 3.14391
-scale = Vector2(16.2319, 5.19952)
+scale = Vector2(19.7647, 2.46874)
 
 [node name="RigidBody2D4" parent="." instance=ExtResource("2_sy68s")]
 position = Vector2(325, -79)
