@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbg5t17t0bdep"]
+
+[ext_resource type="PackedScene" uid="uid://bobomr5wxwruf" path="res://Objetos/Floor.tscn" id="1_bfemw"]
+[ext_resource type="PackedScene" uid="uid://d1i4j556d4xaf" path="res://Objetos/Pelota.tscn" id="2_sy68s"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Floor" parent="." instance=ExtResource("1_bfemw")]
+position = Vector2(534, 627)
+rotation = 3.14391
+scale = Vector2(16.2319, 5.19952)
+
+[node name="RigidBody2D4" parent="." instance=ExtResource("2_sy68s")]
+position = Vector2(325, -79)
+mass = 130.103
+gravity_scale = 4.499
+
+[node name="RigidBody2D3" parent="." instance=ExtResource("2_sy68s")]
+position = Vector2(265, 82)
+
+[node name="RigidBody2D2" parent="." instance=ExtResource("2_sy68s")]
+position = Vector2(177, 223)
+
+[node name="RigidBody2D" parent="." instance=ExtResource("2_sy68s")]
+position = Vector2(109, 391)
+gravity_scale = 1.752
