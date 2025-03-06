@@ -26,5 +26,5 @@ position = Vector2(177, 223)
 position = Vector2(109, 391)
 gravity_scale = 1.752
 
-[node name="Floor3" parent="." instance=ExtResource("3_ag8ca")]
-position = Vector2(457, 217)
+[node name="Floor2" parent="." instance=ExtResource("3_ag8ca")]
+position = Vector2(311, 440)

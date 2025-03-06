@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://cbb26nh2fmb3k"]
+
+[sub_resource type="GDScript" id="GDScript_w0dka"]
+script/source = "extends StaticBody2D
+@export var Velocidad: Vector2 = Vector2(1,1)
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	position = position + Vector2(1,0)
+	
+	
+	
+	
+	
+	 
+	 
+	pass
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8h8bv"]
+size = Vector2(64, 64)
+
+[sub_resource type="Gradient" id="Gradient_8ub5s"]
+offsets = PackedFloat32Array(0.00649351, 1)
+colors = PackedColorArray(0, 1, 0, 1, 0.0619999, 0, 0.62, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7fag0"]
+gradient = SubResource("Gradient_8ub5s")
+fill_from = Vector2(0.366972, 0.866973)
+fill_to = Vector2(0.917431, 0.151376)
+
+[node name="Floor2" type="StaticBody2D"]
+position = Vector2(97, -266)
+rotation = 0.0398105
+scale = Vector2(0.951346, 1.02914)
+script = SubResource("GDScript_w0dka")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_8h8bv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("GradientTexture2D_7fag0")
